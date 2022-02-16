@@ -10,3 +10,4 @@ import './js/backdrop';
 
 import './js/slick';
 import './js/articles-slick';
+import './js/slider'
