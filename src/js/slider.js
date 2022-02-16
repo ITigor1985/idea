@@ -10,7 +10,7 @@ function moveLeft(){
         if(item.classList.contains('active')){
            item.classList.remove('active');
            
-            // let lastElement = items.pop();
+            
             // items.push(lastElement).classList.add('active');
         }
         
