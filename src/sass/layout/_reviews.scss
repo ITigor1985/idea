@@ -1,0 +1,119 @@
+.reviews {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  @include min-width('medium') {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  @include min-width('large') {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+.reviews .container {
+  @include min-width('large') {
+    min-width: 99vw;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.reviews__list {
+  position: relative;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.reviews__list .slick-arrow {
+  position: absolute;
+  top: 100%;
+  z-index: 10;
+}
+
+.reviews__list .slick-list {
+  overflow: hidden;
+}
+/* Лента слайдов */
+.reviews__list .slick-track {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  @include min-width('large') {
+    position: relative;
+  }
+}
+
+.reviews__list .slick-active {
+  @include min-width('large') {
+    position: relative;
+  }
+}
+.reviews__list .slick-arrow.slick-prev {
+  font-size: 0;
+  background-image: url(../images/reviews/mobile/arrow_left.png);
+
+  background-repeat: no-repeat;
+  height: 28px;
+  width: 18px;
+  top: 50%;
+  left: 0;
+}
+.reviews__list .slick-arrow.slick-next {
+  background-image: url(../images/reviews/mobile/arrow_right.png);
+  background-repeat: no-repeat;
+  height: 28px;
+  width: 18px;
+  font-size: 0;
+  top: 50%;
+  right: 0;
+}
+.reviews__title {
+  text-align: center;
+  @include min-width('medium') {
+    text-align: left;
+    margin-bottom: 40px;
+  }
+  @include min-width('large') {
+    margin-bottom: 60px;
+  }
+}
+.reviews__title.container {
+  min-width: 290px;
+  @include min-width('large') {
+    width: 879px !important;
+    min-width: 949px;
+  }
+}
+.reviews__list-item {
+  display: flex;
+  height: 373px;
+  align-items: center;
+  padding: 76px 27px;
+  margin: 42px;
+  text-align: center;
+  box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.25);
+  @include min-width('medium') {
+    height: 305px;
+  }
+  @include min-width('large') {
+  }
+}
+.reviews__name {
+  @include font(18px, 600, 25px);
+  padding-bottom: 35px;
+  border-bottom: 2px solid #eae6e6;
+  margin-bottom: 39px;
+  @include min-width('medium') {
+    @include font(24px, 400, 34px);
+  }
+  @include min-width('large') {
+    @include font(24px, 400, 34px);
+  }
+}
+.reviews__review {
+  @include font(12px, 400, 17px);
+  @include min-width('medium') {
+    @include font(14px, 400, 20px);
+  }
+  @include min-width('large') {
+    @include font(16px, 400, 22px);
+  }
+}

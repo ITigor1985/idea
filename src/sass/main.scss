@@ -1,0 +1,22 @@
+@import './base/base';
+@import './utils/mixins';
+@import './base/fonts';
+@import './utils/variables';
+@import './utils/visually-hidden';
+@import './utils/breakpoints.scss';
+
+@import './components/container';
+@import './components/title';
+
+@import './layout/header-top';
+@import './layout/header';
+@import './layout/about-as';
+@import './layout/advantage';
+@import './layout/price';
+@import './layout/form';
+@import './layout/reviews';
+@import './layout/articles';
+@import './layout/last-form';
+@import './layout/our_destinations';
+@import './layout/backdrop';
+@import './layout/footer';

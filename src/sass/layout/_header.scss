@@ -1,0 +1,98 @@
+.header-mid {
+  display: flex;
+  background-image: url(../images/header/mobile/first_screen.jpg);
+  background-size: cover, cover;
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  min-height: 727px;
+  padding-top: 303px;
+}
+
+.header-mid__title {
+  margin-bottom: 35px;
+}
+
+.header-mid__description {
+  display: none;
+}
+.header-mid__button {
+  padding: 10px 31px;
+  background-color: var(--btn-normal);
+  color: var(--text-white-color);
+  @include font(14px, 800, 21px);
+  box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.25);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  letter-spacing: 1.2px;
+  &:hover,
+  &:focus {
+    box-shadow: none;
+  }
+  &:active {
+    background-color: var(--btn-active-color);
+    color: var(--primary-color);
+  }
+}
+
+@include min-width('medium') {
+  .header-mid {
+    background-image: url(../images/header/tablet/first_screen.jpg);
+    background-size: cover, cover;
+    min-height: 924px;
+    padding-top: 283px;
+  }
+  .header-mid__title {
+    margin-bottom: 13px;
+    width: 540px;
+  }
+  .header-mid__description {
+    display: block;
+    padding-left: 95px;
+    position: relative;
+    width: 532px;
+    color: var(--text-white-color);
+    @include font(20px, 300, 30px);
+    margin-bottom: 83px;
+  }
+  .header-mid__description::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 13px;
+    width: 82px;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+@include min-width('large') {
+  .header-mid {
+    position: relative;
+    background-image: url(../images/header/desktop/first_screen.jpg);
+    background-size: cover, cover;
+    min-height: 637px;
+    padding-top: 119px;
+  }
+  .header-mid__title {
+    width: 654px;
+    margin-bottom: 30px;
+  }
+  .header-mid__description {
+    display: block;
+    padding-left: 122px;
+    margin-bottom: 45px;
+    width: 634px;
+    margin-bottom: 58px;
+  }
+
+  .header-mid__description::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 13px;
+    width: 104px;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}

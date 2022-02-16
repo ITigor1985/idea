@@ -1,0 +1,17 @@
+:root {
+  // Color
+  --primary-color: #974d26; //var(--primary-color);
+  --secondry-color: #d85730; //var(--secondry-color);
+  --beige-color: #e8b872; //var(--beige-color);
+  --bodily-color: #f4ca95; //var(--bodily-color);
+  --text-color: #252525; //var(--text-color);
+  --text-white-color: #fff; //var(--text-white-color);
+  // Shadow
+  --btn-normal: var(--secondry-color);
+  --btn-active-color: var(--beige-color);
+  --btn-hover-shadow: drop-shadow(5px 5px 9px rgba(0, 0, 0, 0.25));
+  // Fonts
+  --main-font: 'Poppins', sans-serif; //var(--main-font);
+  --headers-font: 'Marmelad', sans-serif; //var(--headers-font);
+  //transition
+}

@@ -1,0 +1,409 @@
+.faq {
+  max-width: 425px;
+  margin: 0 auto 23px;
+  @include min-width('medium') {
+    max-width: 768px;
+  }
+  @include min-width('large') {
+    width: 979px;
+    margin: 0 auto 20px;
+    max-width: 979px;
+  }
+}
+.faqs {
+  padding-bottom: 40px;
+  @include min-width('medium') {
+    padding-bottom: 50px;
+  }
+  @include min-width('large') {
+    padding-bottom: 100px;
+  }
+}
+.faqs .container {
+  max-width: 425px;
+  padding-left: 0;
+  padding-right: 0;
+  @include min-width('medium') {
+    max-width: 768px;
+  }
+  @include min-width('large') {
+    max-width: 979px;
+  }
+}
+.answer__costs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include min-width('medium') {
+    width: 136px;
+  }
+  @include min-width('large') {
+    width: 157px;
+  }
+}
+.faq__title {
+  text-align: center;
+  margin-bottom: 50px;
+  @include min-width('medium') {
+    text-align: left;
+    margin-bottom: 60px;
+  }
+  @include min-width('large') {
+    margin-bottom: 100px;
+  }
+}
+.question {
+  display: flex;
+  background: var(--primary-color);
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 11px;
+  @include min-width('medium') {
+    @include font(16px, 600, 22px);
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  @include min-width('large') {
+    @include font(18px, 600, 25px);
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 29px;
+    padding-right: 29px;
+  }
+}
+
+.question h3 {
+  color: var(--text-white-color);
+
+  @include font(14px, 600, 20px);
+  @include min-width('medium') {
+    @include font(16px, 600, 22px);
+  }
+  @include min-width('large') {
+    @include font(18px, 700, 25px);
+  }
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1.4s ease;
+  background-image: url(../images/price/mobile/phone_price_img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include min-width('medium') {
+    background-image: url(../images/price/tablet/tablet_price_img.jpg);
+    height: 384px;
+  }
+  @include min-width('large') {
+    height: 475px;
+    background-image: url(../images/price/desctop/price_img.jpg);
+  }
+}
+.answer.second {
+  height: 727px;
+  background-image: url(../images/price/mobile/bg-second-mobile.jpg);
+
+  @include min-width('medium') {
+    background-image: url(../images/price/tablet/bg-tablet.jpg);
+    height: 470px;
+  }
+  @include min-width('large') {
+    overflow: hidden;
+    height: 575px;
+    background-image: url(../images/price/desctop/bg-desktop.jpg);
+  }
+}
+.answer.third {
+  background-image: url(../images/price/mobile/bg-mobile-third.jpg);
+  height: auto;
+  @include min-width('medium') {
+    background-image: url(../images/price/tablet/bg-tablet-third.jpg);
+  }
+  @include min-width('large') {
+    overflow: hidden;
+    height: 456px;
+    background-image: url(../images/price/desctop/bg-desktop-third.jpg);
+  }
+}
+.answer.fourth {
+  height: auto;
+  background-image: none;
+}
+
+.answer-wrapper {
+  background-image: url(../images/price/desctop/price_abonent_img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.answer__list {
+  @include font(14px, 400, 17px);
+  overflow: hidden;
+  padding-left: 12px;
+  padding-right: 12px;
+  & > :last-child {
+    border-bottom: none;
+  }
+  @include min-width('medium') {
+    @include font(14px, 400, 20px);
+    padding-top: 37px;
+    padding-bottom: 37px;
+
+    & > :nth-child(2n + 1) {
+      margin-bottom: 30px;
+    }
+    & > :nth-child(2) {
+      margin-bottom: 40px;
+    }
+  }
+  @include min-width('large') {
+    padding: 75px 29px;
+    & > :nth-child(2n + 1) {
+      margin-bottom: 40px;
+    }
+    > :nth-child(2) {
+      margin-bottom: 40px;
+    }
+  }
+}
+.answer__list.second {
+  @include min-width('medium') {
+    padding-top: 49px;
+    padding-bottom: 49px;
+    & > :nth-child(n + 1) {
+      margin-bottom: 34px;
+    }
+    & > :last-child {
+      margin-bottom: 0px;
+    }
+  }
+  @include min-width('large') {
+    padding: 69px 29px;
+    & > :nth-child(n + 1) {
+      margin-bottom: 41px;
+    }
+    & > :last-child {
+      margin-bottom: 0px;
+    }
+  }
+}
+.answer__list.third {
+  @include min-width('medium') {
+    & > :nth-child(n + 1) {
+      margin-bottom: 34px;
+    }
+    & > :last-child {
+      margin-bottom: 0px;
+    }
+  }
+}
+.package {
+  text-align: center;
+  @include font(16px, 600, 22px);
+  margin-top: 40px;
+  padding-top: 20px;
+  background-color: rgba(255, 255, 255, 0.6);
+  @include min-width('medium') {
+    @include font(18px, 600, 25px);
+  }
+
+  @include min-width('large') {
+    @include font(24px, 600, 34px);
+  }
+}
+.answer__list.fourth {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.6);
+
+  list-style-image: url(../images/price/desctop/Vector.png);
+  padding-left: 30px;
+  padding-right: 15px;
+  & > li {
+    border-bottom: none;
+    padding: 0;
+    margin-bottom: 15px;
+    & > p {
+      margin-bottom: 0;
+    }
+  }
+  & > li:last-child > p {
+    margin-bottom: 30px;
+  }
+  @include min-width('medium') {
+    & > li > p {
+      position: relative;
+    }
+    & > li > p::before {
+      position: absolute;
+      content: '';
+      width: 20px;
+      height: 20px;
+      left: -25px;
+      background-image: url(../images/price/desctop/Vector.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    & > :nth-child(n + 1) {
+      margin-bottom: 34px;
+    }
+    & > :last-child {
+      margin-bottom: 0px;
+    }
+    & > li:last-child > p {
+      margin-bottom: 15px;
+    }
+    & > li > p {
+      width: 450px;
+    }
+    & > li:last-child {
+      display: flex;
+      flex-direction: column;
+      align-items: space-around;
+    }
+    & > li:last-child > div {
+      margin-left: 0;
+    }
+  }
+  @include min-width('large') {
+    & > li > p {
+      width: 507px;
+    }
+  }
+}
+
+.answer__list.fourth .answer__wrapper-cost {
+  @include min-width('medium') {
+    width: 450px;
+  }
+  @include min-width('large') {
+    width: 507px;
+  }
+}
+
+.answer__list-item {
+  padding: 30px 0px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  @include min-width('medium') {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+}
+.answer__list-item.fourth {
+  padding: 0px 0px;
+  border-bottom: none;
+  @include min-width('medium') {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+}
+
+.answer__list-item-description {
+  margin-bottom: 15px;
+  @include min-width('medium') {
+    width: 319px;
+    margin-bottom: 0;
+  }
+  @include min-width('large') {
+    @include font(18px, 400, 22px);
+    width: 457px;
+  }
+}
+
+.answer__wrapper-cost {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include min-width('medium') {
+    margin-left: auto;
+  }
+}
+.answer__cost {
+  @include font(20px, 400, 28px);
+  @include min-width('large') {
+    @include font(24px, 400, 34px);
+  }
+}
+.answer__button {
+  padding: 12px 35px;
+  color: var(--text-white-color);
+  background: var(--secondry-color);
+  @include font(18px, 800, 21px);
+
+  @media screen and(min-width:360px) {
+    padding: 12px 42px;
+  }
+
+  @include min-width('medium') {
+    margin-left: 24px;
+  }
+  @include min-width('large') {
+    @include font(20px, 700, 23px);
+    padding: 14px 74px;
+    margin-left: 53px;
+  }
+}
+.price__agreement {
+  @include font(12px, 400, 17px);
+  margin-top: 50px;
+  padding-bottom: 50px;
+
+  @include min-width('medium') {
+    @include font(14px, 400, 20px);
+    margin-top: 70px;
+    padding-left: 23px;
+    padding-right: 23px;
+    padding-bottom: 70px;
+  }
+  @include min-width('large') {
+    @include font(16px, 400, 22px);
+    margin-top: 75px;
+    padding-left: 96px;
+    padding-right: 96px;
+    padding-bottom: 75px;
+  }
+}
+
+.faq.active .answer {
+  max-height: 678px;
+  overflow: hidden;
+  animation: fade 1s ease-in-out;
+}
+.faq.active .answer.second {
+  overflow: hidden;
+  max-height: 705px;
+}
+
+.faq.active svg {
+  transform: rotate(180deg);
+}
+
+svg {
+  transition: transforme 0.5s ease-in;
+  margin-left: 10px;
+  min-width: 15px;
+  min-height: 15px;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

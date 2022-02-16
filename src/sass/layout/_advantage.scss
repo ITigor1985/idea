@@ -1,0 +1,102 @@
+.advantage {
+  position: relative;
+  background-image: url(../images/advantage/mobile/statistics_bg.jpg);
+  background-size: cover, cover;
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  min-height: 196px;
+  @include min-width('medium') {
+    background-image: url(../images/advantage/tablet/statistics_tablet_bg.jpg);
+    min-height: 210px;
+  }
+  @include min-width('large') {
+    background-image: url(../images/advantage/desctop/statistics_desctop_bg.jpg);
+    min-height: 334px;
+  }
+}
+.advantage .container {
+  display: flex;
+  align-items: center;
+  @include min-width('medium') {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.advantge__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex: 3 2;
+  padding-top: 29px;
+
+  & > :not(:nth-child(2n + 3)) {
+    margin-right: 0px;
+  }
+  & > :not(:nth-child(n + 4)) {
+    margin-bottom: 12px;
+  }
+
+  @include min-width('medium') {
+    padding-top: 61px;
+    margin: 0 auto;
+
+    & > :not(:last-child) {
+      margin-right: 54px;
+    }
+    & > :not(:nth-child(n + 4)) {
+      margin-bottom: 0px;
+    }
+  }
+  @include min-width('large') {
+    margin: 0 auto;
+    padding-top: 100px;
+    & > :not(:last-child) {
+      margin-right: 83px;
+    }
+  }
+}
+
+.advantge__list-item {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // width: 76px;
+  height: 63px;
+  @include min-width('medium') {
+    margin-bottom: 0;
+    width: 90px;
+    height: 88px;
+  }
+  @include min-width('large') {
+    width: 150px;
+    height: 134px;
+  }
+}
+
+.advantage__number {
+  @include font(24px, 400, 29px);
+  color: var(--text-white-color);
+  @include min-width('medium') {
+    @include font(36px, 400, 43px);
+  }
+  @include min-width('large') {
+    @include font(48px, 400, 57px);
+  }
+}
+
+.advantage__description {
+  text-align: center;
+  width: 70px;
+  @include font(12px, 400, 17px);
+  color: var(--text-white-color);
+  @include min-width('medium') {
+    @include font(14px, 400, 20px);
+    width: 85px;
+  }
+  @include min-width('large') {
+    @include font(24px, 400, 34px);
+    width: 140px;
+  }
+}
