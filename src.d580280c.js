@@ -9,4 +9,4 @@ const e=document.querySelectorAll(".slider-item"),t=document.querySelector(".lef
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("material-icons/iconfont/filled.css"),require("aos/dist/aos.css"),require("./sass/main.scss"),require("./js/aos.js"),require("./js/backdrop"),require("./js/slick"),require("./js/articles-slick"),require("./js/slider");
 },{"material-icons/iconfont/filled.css":"N8cg","aos/dist/aos.css":"cOFZ","./sass/main.scss":"clu1","./js/aos.js":"cOFZ","./js/backdrop":"cOFZ","./js/slick":"cOFZ","./js/articles-slick":"cOFZ","./js/slider":"wzuc"}]},{},["Focm"], null)
-//# sourceMappingURL=src.014829dd.js.map
+//# sourceMappingURL=src.d580280c.js.map
