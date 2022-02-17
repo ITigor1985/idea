@@ -1,33 +1,50 @@
 .slider {
   position: relative;
   display: flex;
+
+  width: 300px;
 }
 
 .one {
   background-color: blue;
-  width: 100%;
+  width: 300px;
   height: 100px;
 }
 .two {
   background-color: rgb(171, 185, 48);
-  width: 100%;
+  width: 300px;
   height: 100px;
 }
 .three {
   background-color: rgb(224, 26, 26);
-  width: 100%;
+  width: 300px;
   height: 100px;
 }
 
 .active {
   position: absolute;
-
+  transform: translateX(0);
+  transition: all 1s;
+  width: 100%;
   top: 0;
   left: 0;
 }
 
-// .no-active {
-//   position: absolute;
-//   transform: translateX(-100%);
-//   z-index: -1;
-// }
+.no-active {
+  //left: -100%;
+  position: absolute;
+  width: 100%;
+  //transform: translateX(-100%);
+  opacity: 0;
+  transition: all 1s;
+}
+
+.left {
+  position: relative;
+  top: 100px;
+}
+.right {
+  position: relative;
+  top: 100px;
+  left: 230px;
+}

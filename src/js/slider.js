@@ -9,7 +9,8 @@ btnRight.addEventListener('click', moveRight);
 
 function moveLeft() {
   let step = 1; //шаг
-  for (i = 0; i < step; i++) {
+  for (let i = 0; i < step; i++) {
+
     arr[0].classList.remove('active');
     if (!arr[0].classList.contains('no-active')) {
       arr[0].classList.add('no-active');
@@ -23,7 +24,7 @@ function moveLeft() {
 
 function moveRight() {
   let step = 1;
-  for (i = 0; i < step; i++) {
+  for (let i = 0; i < step; i++) {
     arr[0].classList.remove('active');
     if (!arr[0].classList.contains('no-active')) {
       arr[0].classList.add('no-active');
